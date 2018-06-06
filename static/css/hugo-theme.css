@@ -425,14 +425,17 @@ figcaption h4 {
 .logo-wrapper .logo {
     color: rgba(0,0,0,.84);
     text-decoration: none;
-    line-height: normal;
+    line-height: normal !important;
 }
 
 #top-bar .site-navbar .menu {
     float: right;
     padding-right: 15px;
     font-family: Athelas,STHeiti,Microsoft Yahei,serif;
+    margin-top: 1.0rem !important;
+    margin-bottom: 1.0rem !important;
 }
+
 
 #top-bar .site-navbar .menu .menu-item {
     display: inline-block;
@@ -443,5 +446,7 @@ figcaption h4 {
 
 #top-bar .site-navbar .menu .menu-item-link{
     font-size: 18px;
+    color: rgba(0,0,0,.84);
+    text-decoration: none;
 }
 
