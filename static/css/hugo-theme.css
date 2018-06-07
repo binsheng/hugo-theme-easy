@@ -39,9 +39,21 @@ body {
 }
 
 #body-inner {
-    padding: 70px 100px 0;
+    padding: 1rem 6rem 0;
     background: #FFFFFF;
 }
+@media only all and (max-width: 59.938em) {
+    #body-inner{
+        position: static;
+        padding: 15px 2rem;
+    }
+}
+@media only all and (max-width: 47.938em) {
+    #body-inner {
+        padding: 5px 0rem;
+    }
+}
+
 
 #body a.highlight, #body a.highlight:hover, #body a.highlight:focus {
     text-decoration: none;
