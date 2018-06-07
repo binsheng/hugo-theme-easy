@@ -425,7 +425,7 @@ figcaption h4 {
 .logo-wrapper .logo {
     color: rgba(0,0,0,.84);
     text-decoration: none;
-    line-height: normal !important;
+    line-height: unset !important;
 }
 
 #top-bar .site-navbar .menu {
