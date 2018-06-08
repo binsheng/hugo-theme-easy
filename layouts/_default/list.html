@@ -1,12 +1,6 @@
 {{ partial "header.html" . }}
-<div>
-    aaaa
-{{ $p := .Pages}}
-{{ range $i,$e := $p}}
-{{$i}}
-    {{ end }}
-</div>
-{{- $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 10) }}
+
+{{- $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") }}
 <section id="archive" class="archive">
   {{- if not $paginator.HasPrev }}
     <div class="archive-title">
