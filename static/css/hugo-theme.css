@@ -722,3 +722,52 @@ next {
 .post-copyright .copyright-item .item-title:after {
     content: " :";
 }
+
+/* tag */
+.tag-cloud {
+    margin: 2em 0 3em;
+    text-align: center;
+    font-family: $global-serif-font-family;
+}
+.tag-cloud .tag-cloud-title {
+        display: inline-block;
+        font-size: $tag-cloud-title-size;
+        color: $theme-color;
+        border-bottom: $tag-cloud-title-border-bottom;
+}
+
+.tag-cloud .tag-cloud-tags {
+        margin: 10px 0;
+}
+
+.tag-cloud .tag-cloud-tags a {
+            display: inline-block;
+            position: relative;
+            margin: $tag-cloud-tags-link-margin;
+            word-wrap: break-word;
+            transition-duration: 0.2s;
+            transition-property: transform;
+            transition-timing-function: ease-out;
+}
+
+.tag-cloud .tag-cloud-tags a .tag-count {
+                display: inline-block;
+                position: relative;
+                top: -8px;
+                right: -2px;
+                color: $theme-color;
+                font-size: $category-count-font-size;
+}
+
+.tag-cloud .tag-cloud-tags a:hover {
+                color: $theme-color;
+                transform: scale(1.1);
+}
+.tag-cloud .tag-cloud-tags a:active{
+    color: $theme-color;
+    transform: scale(1.1);
+}
+.tag-cloud .tag-cloud-tags a:focus{
+    color: $theme-color;
+    transform: scale(1.1);
+}
