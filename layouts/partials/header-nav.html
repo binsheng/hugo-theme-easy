@@ -12,29 +12,8 @@
   <ul id="menu" class="menu">
     {{ range .Site.Menus.main }}
       <li class="menu-item">
-        {{ if .HasChildren }}
-          <!-- drop down navigation MENU -->
-          <a class="menu-item-link menu-parent" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
-          <ul class="submenu">
-            {{ range .Children }}
-              <li>
-                <a href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
-              </li>
-            {{ end }}
-          </ul>
-
-        {{ else }}
           <!-- normal MENU -->
-          {{ if hasPrefix .URL "http" }}
-            <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}" rel="noopener" target="_blank">
-              {{ .Name }}
-            <i class="iconfont icon-new-window"></i>
-            </a>
-          {{ else }}
             <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
-          {{ end }}
-
-        {{ end  }}
 
       </li>
     {{ end }}

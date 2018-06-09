@@ -2,6 +2,7 @@
 
 {{ .Content }}
 
+{{ partial "copyright.html" . }}
 <footer class=" footline" >
 	{{with .Params.LastModifierDisplayName}}
 	    <i class='fa fa-user'></i> <a href="mailto:{{ $.Params.LastModifierEmail }}">{{ . }}</a> {{with $.Date}} <i class='fa fa-calendar'></i> {{ .Format "02/01/2006" }}{{end}}

@@ -495,9 +495,8 @@ figcaption h4 {
     text-decoration: none;
 }
 
-// ==============================
-// Archive
-// =============================
+/* Archive */
+ 
 .archive {
     // margin: $archive-margin;
     // max-width: $archive-max-width;
@@ -632,11 +631,11 @@ figcaption h4 {
     text-align: center;
 }
 
-.pagination li{
+.pagination li {
     display: inline-block;
 }
 
-.pagination li a{
+.pagination li a {
     background-color: #fff;
     margin-left: .1em;
     margin-right: .1em;
@@ -651,7 +650,7 @@ figcaption h4 {
 
 }
 
-.pagination .active a{
+.pagination .active a {
     background-color: #222;
     border-color: #222;
     color: #fff;
@@ -659,7 +658,8 @@ figcaption h4 {
     z-index: 2;
 }
 
-.prev,next{
+.prev,
+next {
     font-weight: 600;
     font-size: $pagination-font-size;
     font-family: $global-serif-font-family;
@@ -684,4 +684,41 @@ figcaption h4 {
         color: $theme-color;
         transform: translateX(4px);
     }
+}
+
+
+/* Copyright */
+
+.post-copyright {
+    padding: 10px;
+    background-color: hsla(0,0%,71%,.1);
+    border: 1px solid #e1e1e1;
+    border-left: solid;
+    margin-top: 3em;
+}
+
+.post-copyright .copyright-item {
+    margin: 5px 0;
+}
+
+.post-copyright .copyright-item a {
+    color: #c05b4d;
+    word-wrap: break-word;
+}
+
+.post-copyright .copyright-item a:hover {
+    border-bottom: $content-link-border;
+}
+
+.post-copyright .copyright-item .item-title {
+    display: inline-block;
+    min-width: 5rem;
+    margin-right: .5rem;
+    text-align: right;
+    font-weight: bold;
+
+}
+
+.post-copyright .copyright-item .item-title:after {
+    content: " :";
 }
