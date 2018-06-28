@@ -989,6 +989,13 @@ td {
     height: 60px;
     min-height: 3rem;
 }
+
+@media screen and (max-width: 1080px){
+    #top-bar {
+        background: #FFFFFFFF;
+    }
+}
+
 #top-github-link {
     position: relative;
     z-index: 1;
