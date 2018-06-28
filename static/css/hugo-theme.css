@@ -473,6 +473,13 @@ figcaption h4 {
     line-height: unset !important;
 }
 
+@media screen and (max-width: 1080px) {
+    .site-navbar {
+        display: none;
+    }
+}
+
+
 #top-bar .site-navbar .menu {
     float: right;
     padding-right: 15px;
