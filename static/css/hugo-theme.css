@@ -413,7 +413,7 @@ figcaption h4 {
 /* 每页头部图片 */
 
 .post-full-image {
-    margin: 0 -10vw -165px;
+    margin: 0 -0vw -165px;
     height: 600px;
     background: #c5d2d9 50%;
     background-size: cover;

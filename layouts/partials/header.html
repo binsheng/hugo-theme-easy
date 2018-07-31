@@ -44,27 +44,31 @@
                 {{ partial "header-nav.html" . }}
             </div>
         </div>
+
+        {{if .IsPage }}
+        <section class="post-full-meta">
+            <time class="post-full-meta-date" datetime="{{.Date.Format "2006-01-02"}}">{{ .Date.Format "2 January 2006" | safeHTML }}</time>{{if .Params.tags }}
+            <span class="date-divider">/</span> {{ range $index, $tag := .Params.tags }}{{if lt $index 2}}<a href="{{$.Site.BaseURL}}tags/{{ $tag | urlize }}/">#{{$tag}}</a>&nbsp;{{end}}{{end}}{{ end }}
+        </section>
+        <h1>{{.Title}}</h1>
+        <div>
+            {{if .Params.image}}
+            <figure class="post-full-image" style="background-image: url({{.Params.image | absURL}})">
+            </figure>
+            {{else}}
+            <figure class="post-full-image" style="background-image: url({{$.Site.BaseURL}}defimg/{{ index (seq 7 | shuffle) 0 }}.jpg)">
+            </figure>
+            {{end}}
+        </div>
+        {{end}}
+
+
+
         {{ if and (not .IsHome) (not .Params.chapter)}}
         <div class="padding highlightable">
             {{else}}
             <div class="highlightable">
         {{end}}
-            {{if .IsPage }}
-            <section class="post-full-meta">
-                <time class="post-full-meta-date" datetime="{{.Date.Format "2006-01-02"}}">{{ .Date.Format "2 January 2006" | safeHTML }}</time>{{if .Params.tags }}
-                <span class="date-divider">/</span> {{ range $index, $tag := .Params.tags }}{{if lt $index 2}}<a href="{{$.Site.BaseURL}}tags/{{ $tag | urlize }}/">#{{$tag}}</a>&nbsp;{{end}}{{end}}{{ end }}
-            </section>
-            <h1>{{.Title}}</h1>
-            <div>
-                {{if .Params.image}}
-                <figure class="post-full-image" style="background-image: url({{.Params.image | absURL}})">
-                </figure>
-                {{else}}
-                <figure class="post-full-image" style="background-image: url({{$.Site.BaseURL}}defimg/{{ index (seq 7 | shuffle) 0 }}.jpg)">
-                </figure>
-                {{end}}
-            </div>
-            {{end}}
         {{ if .Params.chapter }}
           <div id="chapter">
         {{ end }}
