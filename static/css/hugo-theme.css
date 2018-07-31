@@ -423,7 +423,7 @@ figcaption h4 {
 @media (max-width:1170px) {
     .post-full-image {
         margin: 0 -4vw -100px;
-        height: 600px;
+        height: 500px;
         border-radius: 0
     }
 }
@@ -442,9 +442,10 @@ figcaption h4 {
     -ms-flex-align: center;
     align-items: center;
     color: #738a94;
-    font-size: 1.4rem;
+    font-size: 100%;
     font-weight: 600;
-    text-transform: uppercase
+    margin-bottom: 3em;
+
 }
 
 .post-full-meta-date {
