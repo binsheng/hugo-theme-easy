@@ -408,9 +408,9 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 #body .nav.nav-next {
     right: 0;
 }
-#body-inner {
-    margin-bottom: 5rem;
-}
+/* #body-inner { */
+/*     margin-bottom: 5rem; */
+/* } */
 #chapter {
     display: flex;
     align-items: center;
@@ -897,7 +897,7 @@ td {
     border-right-color: rgba(0, 0, 0, 0.8);
 }
 .highlightable {
-    padding: 1rem 0 1rem;
+    padding: 1rem 0 0rem;
     overflow: auto;
     position: relative;
 }
