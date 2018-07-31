@@ -40,6 +40,16 @@ body {
     background-color: #e9ebec;
 }
 
+#body img{
+    -webkit-box-shadow: 2px 20px 40px 10px rgba(0,0,0,.15);
+    box-shadow: 2px 20px 40px 10px rgba(0,0,0,.15);
+    border-style: none;
+    @media screen and (max-width: 800px) {
+        box-shadow: none;
+    }
+
+}
+
 #body-inner {
     padding: 1rem 6rem 3rem;
     background: #FFFFFF;
