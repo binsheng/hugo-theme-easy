@@ -46,6 +46,7 @@
         </div>
 
        <div>
+           {{ if (not .IsHome)}}
             {{if .Params.image}}
             <figure class="post-full-image" style="background-image: url({{.Params.image | absURL}})">
             </figure>
@@ -53,13 +54,14 @@
             <figure class="post-full-image" style="background-image: url({{$.Site.BaseURL}}defimg/{{ index (seq 7 | shuffle) 0 }}.jpg)">
             </figure>
             {{end}}
+            {{end}}
         </div>
 
 
 
         {{ if and (not .IsHome) (not .Params.chapter)}}
         <div class="padding highlightable">
-            {{else}}
+        {{else}}
             <div class="highlightable">
         {{end}}
         {{ if .Params.chapter }}
