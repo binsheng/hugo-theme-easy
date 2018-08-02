@@ -518,8 +518,6 @@ figcaption h4 {
 /* Archive */
  
 .archive {
-    // margin: $archive-margin;
-    // max-width: $archive-max-width;
     margin: 0 5em 3em;
     background-color: white;
     padding: 1em 5em 5em 5em;
@@ -565,6 +563,7 @@ figcaption h4 {
         width: 100%;
 
         .archive-post-time {
+            padding-right: 2em;
             color: $dark-gray;
             display: table-cell;
             width: 7em;
