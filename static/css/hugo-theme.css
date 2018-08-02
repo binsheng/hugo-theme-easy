@@ -35,7 +35,7 @@
 }
 
 body {
-    font-size: 16px !important;
+    /* font-size: 16px !important; */
     color: #323232 !important;
     background-color: #e9ebec;
 }
@@ -453,16 +453,15 @@ figcaption h4 {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    color: #738a94;
     font-size: 100%;
     font-weight: 600;
     margin-bottom: 3em;
 
 }
 
-.post-full-meta-date {
-    color: #3eb0ef
-}
+/* .post-full-meta-date { */
+/*     color: #3eb0ef */
+/* } */
 
 /* 顶部导航 */
 
