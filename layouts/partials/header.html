@@ -46,7 +46,7 @@
         </div>
 
        <div>
-           {{ if (not .IsHome)}}
+           {{ if .IsPage}}
             {{if .Params.image}}
             <figure class="post-full-image" style="background-image: url({{.Params.image | absURL}})">
             </figure>
